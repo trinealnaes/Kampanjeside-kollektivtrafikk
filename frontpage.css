@@ -1,0 +1,70 @@
+.frontpage {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    background-color: #4ed4d4;
+    z-index: 100;
+}
+
+.frontpage h1 {
+    font-family: 'coiny', 'fredoka one', 'bangers', sans-serif;
+    font-size: 7.5em;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 0;
+    padding-top: 15%;
+    transform: skewY(-5deg);
+}
+
+.frontpage h1, h2, h3 {
+    filter: drop-shadow(-3px 4px 0 #53c5c3);
+}
+
+.frontpage h1 span {
+    font-size: 0.7em;
+    font-weight: 100;
+    padding-left: 6px;
+}
+
+.frontpage h2 {
+    font-family: 'coiny', sans-serif;
+    font-size: 3.7em;
+    font-weight: 100;
+    color: white;
+    margin-left: 20%;
+    margin-top: -95px;
+    transform: skewY(-5deg);
+}
+
+#message {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9em;
+    margin-top: -2.5%;
+    margin-left: 19%;
+}
+
+#headings {
+    width: 60%;
+    margin: 8% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#headings h3 {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#headings #line {
+    width: 4px;
+    height: 150px;
+    border-radius: 5px;
+    margin-left: 2%;
+    background-color: white;
+    box-shadow: -2px 4px 0 #58cac8;
+}

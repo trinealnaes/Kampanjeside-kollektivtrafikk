@@ -1,0 +1,127 @@
+.busses {
+    width: 12%;
+    height: 105vh;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    margin-left: 18.8%;
+}
+
+#leftLane, #rightLane {
+    width: 50%;
+    height: 105vh;
+    position: absolute;
+    /* background-color: rgba(0, 0, 255, 0.4); */
+}
+
+#rightLane {
+    right: 0;
+    /* background-color: rgba(255, 0, 255, 0.4); */
+}
+
+.bus {
+    width: 80%;
+    height: 260px;
+    margin-left: 8%;
+    position: absolute;
+    background-image: url(img/bus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    filter: drop-shadow(0px 2px 6px rgb(19, 19, 19));
+    /* background-color: rgba(128, 0, 128, 0.39); */
+}
+
+#leftBus {
+    animation: drive 15s linear infinite;
+}
+
+@keyframes drive {
+    0%  { top: -40%; }
+    35% { top: 35%; }
+    50% { top: 35%; }
+    100% { top: 150%; }
+}
+
+#rightBus {
+    /* position: absolute; */
+    transform: rotate(180deg);
+    animation: driveUp 12s linear infinite;
+}
+
+@keyframes driveUp {
+    0%    { top: 150%; }
+    100%  { top: -50%; }
+}
+
+#cars {
+    width: 12%;
+    height: 105vh;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    margin-right: 18.8%;
+    filter: drop-shadow(0px 2px 6px rgb(19, 19, 19));
+    z-index: 10;
+}
+
+#leftSide, #rightSide {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    /* background-color: rgba(235, 69, 199, 0.4); */
+}
+
+#leftSide {
+    transform: rotate(180deg);
+    animation: queLeft 120s linear infinite;
+}
+
+@keyframes queLeft {
+    0% { top: 0%; }
+    100% { top: 100%; }
+}
+
+#carFact {
+    visibility: hidden;
+    position: absolute;
+}
+
+#carFact.infoText {
+    visibility: visible;
+    width: 160px;
+    height: 80px;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: 'Quicksand';
+    position: absolute;
+    left: 55%;
+    top: 105%;
+    background-color: white;
+    box-shadow: -2px 3px 0px #3e521c;
+}
+
+#rightSide {
+    right: 0;
+    animation: queRight 300s linear infinite;
+    /* background-color: rgba(255, 143, 91, 0.4); */
+}
+
+@keyframes queRight {
+    0% { top: 0%; }
+    100% { top: -100%; }
+}
+
+.redCar, .greenCar, .yellowCar, .blueCar {
+    width: 65%;
+    height: 120px;
+    margin-left: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+}
+
+.redCar { background-image: url(img/rodbil.png); }
+.greenCar { background-image: url(img/gronnbil.png); }
+.yellowCar { background-image: url(img/gulbil.png); }
+.blueCar { background-image: url(img/blabil.png); }

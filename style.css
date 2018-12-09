@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(90deg, #8bc348 50%, #496022 50%);
+    /* background-color: rgb(65, 136, 65); */
+}
+
+#container {
+    width: 100vw;
+    height: 105vh;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: -100;
+}
+
+/* VEG OG BOM */
+.road {
+    background-color: rgb(41, 41, 41);
+    width: 12%;
+    margin-bottom: 0;
+
+    display: grid;
+    grid-row-gap: 50px;
+}
+
+.leftRoad { box-shadow: 0 0px 90px rgb(139, 226, 136); }
+
+.rightRoad { box-shadow: 0 0px 100px #3e521c; }
+
+.road .midStripe {
+    background-color: rgb(240, 226, 35);
+    width: 4px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Gjerde i mellom vegene */
+#fence {
+    width: 8px;
+    height: 105vh;
+    background-color: rgb(119, 82, 34);
+    box-shadow: 0 2px 10px #253110;
+}
+
+/* vegbom på høyre veg */
+.rightRoad .barrier {
+    height: 10px;
+    width: 13.5%;
+    background-color: black;
+    margin-left: -10px;
+    border-radius: 8px;
+    box-shadow: 0 0px 30px #253110;
+
+    margin-top: 12%;
+    position: absolute;
+    z-index: 11;
+}
+
+.rightRoad .barrier:nth-child(2) {
+    margin-top: 38%;
+}
+
+.barrierBlock {
+    width: 120px;
+    height: 18px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px 16px;
+
+    margin: 0 auto;
+    margin-top: -4px;
+}

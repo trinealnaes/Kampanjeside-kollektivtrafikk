@@ -1,0 +1,75 @@
+/* BUSSPLASSER */
+#busStations {
+    width: 22%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 1.5%;
+    margin-left: 14.5%;
+
+    /* Legger bussplassene på hver sin side */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.stationGruop {
+    width: 70px;
+    height: 100%;
+
+    /* Sprer bussplassene oppover */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stationLeft, .stationRight{
+    /* Hver enkelt bussplass */
+    width: 50px;
+    height: 105px;
+    background-color: #b9cfcf;
+    box-shadow: 1px 1px 5px rgb(76, 151, 73);
+}
+
+.stationLeft { border-radius: 6px 0px 0px 6px; }
+.stationRight { border-radius: 0px 6px 6px 0px; }
+
+.stationLeft .bench, .stationRight .benchRight {
+    width: 20px;
+    height: 40px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    border-color: rgb(172, 168, 161);
+    /* border-color: rgba(119, 82, 34, 0.75); */
+    border-style: solid;
+    border-width: 0px 9px;
+    border-radius: 3px;
+}
+
+.stationRight .benchRight {
+    margin-left: 21px;
+}
+
+.bench::after, .benchRight::after {
+    /* Border på hver bussplass */
+    content: "";
+    height: 90px;
+    width: 43px;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -15px;
+    border-style: solid;
+    border-color: #8B97A1;
+    /* border-color: rgba(0, 0, 0, 0.7); */
+    border-width: 3px 0 3px 3px;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.benchRight::after {
+    margin-left: -30px;
+    border-width: 3px 3px 3px 0;
+    border-radius: 0px 3px 3px 0px;
+}

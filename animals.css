@@ -1,0 +1,162 @@
+#animals {
+    width: 50%;
+    height: 100%;;
+    position: absolute;
+    left: 0;
+    /* background-color: rgba(143, 228, 200, 0.425); */
+}
+
+/* GRISER */
+.animalMud {
+    width: 20%;
+    height: 70px;
+    position: absolute;
+    /* background-color: aquamarine; */
+}
+
+.firstMud {
+    left: 5%;
+    top: 5%;
+}
+
+.secondMud {
+    bottom: 8%;
+    right: 5%;
+}
+
+.mOne, .mTwo, .mThree, .mFour{
+    width: 85%;
+    height: 25%;
+    border-radius: 50px;
+    background-color: #a87702;
+    box-shadow: inset 0px 0px 20px #66440e;
+    /* background-color: rgb(150, 98, 50); 
+    box-shadow: inset 0px 0px 20px rgb(110, 74, 39); */
+    /* , 0px 3px 5px #7fb958 */
+}
+
+.mOne { width: 65%; margin-left: 15%; }
+.mTwo { margin-left: 5%; }
+.mThree { margin-left: 0; }
+.mFour { width: 65%; margin-left: 10%; }
+
+.pigs {
+    width: 25%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+}
+
+.pigOne {
+    width: 26px;
+    height: 26px;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.pigBody {
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: pink;
+    box-shadow: inset 2px 2px 6px rgb(173, 110, 121), 0px 0px 8px rgb(110, 74, 39);
+}
+
+.pigHead {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: pink;
+    margin-left: 10px;
+    margin-top: -5px;
+    box-shadow: inset 0px 0px 6px rgb(173, 110, 121), 0px 0px 8px rgb(110, 74, 39);
+}
+
+.pigTwo {
+    width: 26px;
+    height: 26px;
+    margin-top: -5px;
+    margin-left: 70px;
+}
+
+.pigTwo .pigBody { box-shadow: inset -2px 2px 6px rgb(173, 110, 121); }
+
+.pigTwo .pigHead { margin-left: 0px; }
+
+/* SAUER */
+.sheeps {
+    width: 20%;
+    height: 15%;
+    position: absolute;
+}
+
+.sheeps.gruopOne { top: 38%; left: 7%; }
+.sheeps.gruopTwo { top: 18%; right: 3%; }
+
+.sheepOne, .sheepTwo {
+    width: 30%;
+    height: 40%;
+}
+
+.sheepTwo { margin-left: 40%; }
+
+.sheepBody {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: inset 0px 0px 10px lightgrey, 0px 2px 5px rgb(53, 167, 53);
+    /* 0px px 25px rgb(53, 167, 53) */
+    animation: sheepWalk 15s linear infinite;
+}
+
+@keyframes sheepWalk {
+    0% { margin-top: 0%; }
+    50% { margin-top: 60%; }
+    100% { margin-top: 0%; }
+}
+
+.sheepHead {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-top: -10px;
+    background-color: black;
+    box-shadow: 5px 5px 20px rgb(53, 167, 53);
+    animation: sheepTurn 30s linear infinite;
+}
+
+@keyframes sheepTurn {
+    0% { margin-left: 0%; margin-top: -10px; box-shadow: 5px 5px 20px rgb(53, 167, 53); } 
+    25% { margin-left: -20%; margin-top: -25px; box-shadow: 0px 5px 20px rgb(53, 167, 53); }
+    50% { margin-left: -20%; margin-top: -40px; box-shadow: -5px 0px 10px rgb(53, 167, 53); }
+    75% { margin-left: -20%; margin-top: -25px; box-shadow: 0px 5px 20px rgb(53, 167, 53); } 
+    100% { margin-left: 0%; margin-top: -10px; box-shadow: 5px 5px 20px rgb(53, 167, 53); }
+}
+
+.sheepTwo .sheepHead { margin-left: 18px; }
+
+/* TRÆR */
+.tree {
+    width: 13%;
+    height: 12%;
+    position: absolute;
+}
+
+.treeOne { top: 20%; left: 12%; }
+.treeTwo { top: 75%; left: 6%; }
+.treeThree { top: 45%; right: 9%; }
+
+.bushOne, .bushTwo, .bushThree, .bushFour {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #496f26;
+    box-shadow: 1px 3px 3px #639436cc;
+    position: absolute;
+}
+
+.bushOne { left: 10%; }
+.bushTwo { left: 42%; top: 10%; }
+.bushThree { top: 35%; }
+.bushFour { left: 41%; top: 41%; }

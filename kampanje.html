@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kampanje - kollektivtrafikk</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="frontpage.css">
+    <link rel="stylesheet" href="busstations.css">
+    <link rel="stylesheet" href="clouds.css">
+    <link rel="stylesheet" href="cars.css">
+    <link rel="stylesheet" href="animals.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+    <div class="frontpage">
+        <h1>Kollektiv<span>-</span></h1>
+        <h2>trafikk</h2>
+        <p id="message">Klikk og beveg deg rundt på siden</p>
+        <div id="headings">
+            <h3>Kollektivt</h3>
+            <div id="line"></div>
+            <h3>Personbiler</h3>
+        </div>
+    </div>
+
+    <div id="container">
+
+        <!-- DYR OG NATUR -->
+        <div id="animals">
+
+            <!-- Griser -->
+            <div class="animalMud firstMud"> 
+                <div class="mOne"></div>
+                <div class="mTwo"></div>
+                <div class="mThree"></div>
+                <div class="mFour"></div>
+
+                <div class="pigs" id="pigsFirst">
+                    <div class="pigOne">
+                        <div class="pigBody"></div>
+                        <div class="pigHead"></div>
+                    </div>
+                    <div class="pigTwo">
+                        <div class="pigBody"></div>
+                        <div class="pigHead"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animalMud secondMud"> 
+                <div class="mOne"></div>
+                <div class="mTwo"></div>
+                <div class="mThree"></div>
+                <div class="mFour"></div>
+
+                <div class="pigs" id="pigsLast">
+                    <div class="pigOne">
+                        <div class="pigBody"></div>
+                        <div class="pigHead"></div>
+                    </div>
+                    <div class="pigTwo">
+                        <div class="pigBody"></div>
+                        <div class="pigHead"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- audio pigs -->
+            <audio id="pigSound" style="display: none">
+                <source src="audio/pig_sounds.mp3">
+            </audio>
+
+            <!-- Sauer -->
+            <div class="sheeps gruopOne" id="sheepsFirst">
+                <div class="sheepOne">
+                    <div class="sheepBody"></div>
+                    <div class="sheepHead"></div>
+                </div>
+                <div class="sheepTwo">
+                    <div class="sheepBody"></div>
+                    <div class="sheepHead"></div>
+                </div>
+            </div>
+            
+            <div class="sheeps gruopTwo" id="sheepsLast">
+                <div class="sheepOne">
+                    <div class="sheepBody"></div>
+                    <div class="sheepHead"></div>
+                </div>
+                <div class="sheepTwo">
+                    <div class="sheepBody"></div>
+                    <div class="sheepHead"></div>
+                </div>
+            </div>
+            <!-- audio sheeps -->
+            <audio id="sheepSound" style="display: none">
+                <source src="audio/sheep_sounds.mp3">
+            </audio>
+
+            <!-- Trær -->
+            <div class="tree treeOne" id="treeFirst">
+                <div class="bushOne"></div>
+                <div class="bushTwo"></div>
+                <div class="bushThree"></div>
+                <div class="bushFour"></div>
+            </div>
+
+            <div class="tree treeTwo" id="treeSecond">
+                <div class="bushOne"></div>
+                <div class="bushTwo"></div>
+                <div class="bushThree"></div>
+                <div class="bushFour"></div>
+            </div>
+
+            <div class="tree treeThree" id="treeLast">
+                <div class="bushOne"></div>
+                <div class="bushTwo"></div>
+                <div class="bushThree"></div>
+                <div class="bushFour"></div>
+            </div>
+            <!-- audio threes -->
+            <audio id="birdSound" style="display: none">
+                <source src="audio/bird_sounds.mp3">
+            </audio>
+        </div>
+
+        <!-- BUSSPLASSER -->
+        <div id="busStations">
+            <div class="stationGruop">
+                <div class="stationLeft">
+                    <div class="bench"></div>
+                </div>
+
+                <div class="stationLeft">
+                    <div class="bench"></div>
+                </div>
+                    
+                <div class="stationLeft">
+                    <div class="bench"></div>
+                </div>
+
+                <div class="stationLeft">
+                    <div class="bench"></div>
+                </div>
+            </div>
+
+            <div class="stationGruop">
+                <div class="stationRight">
+                    <div class="benchRight"></div>
+                </div>
+
+                <div class="stationRight">
+                    <div class="benchRight"></div>
+                </div>
+
+                <div class="stationRight">
+                    <div class="benchRight"></div>
+                </div>
+
+                <div class="stationRight">
+                    <div class="benchRight"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VENSTRE VEI -->
+        <div class="road leftRoad">
+            <div class="midStripe"></div>
+            <div class="midStripe"></div>
+            <div class="midStripe"></div>
+            <div class="midStripe"></div>
+        </div>
+
+        <!-- gjerde mellom veiene -->
+        <div id="fence"> </div>
+
+        <!-- KJØRETØY -->
+        <!-- venstre side -->
+        <div class="busses">
+            <div id="leftLane">
+                <div id="leftBus" class="bus"></div>
+            </div>
+
+            <div id="rightLane">
+                <div id="rightBus" class="bus"></div>
+            </div>
+        </div>
+
+        <!-- høyre side -->
+        <div id="cars">
+            <audio id="trafficNoise" style="display: none">
+                <source src="audio/traffic_jam.mp3">
+            </audio>
+            <div id="leftSide">
+                <div class="redCar"></div>
+                <div class="greenCar"></div>
+                <div class="yellowCar"></div>
+                <div class="blueCar"></div>
+                <div class="greenCar"></div>
+                <div class="redCar"></div>
+                <div class="yellowCar"></div>
+                <div class="greenCar"></div>
+                <div class="blueCar"></div>
+                <div class="redCar"></div>
+                <div class="greenCar"></div>
+                <div class="blueCar"></div>
+                <div class="yellowCar"></div>
+                <div class="redCar"></div>
+                <div class="greenCar"></div>
+            </div>
+
+            <div id="rightSide">
+                <div class="yellowCar"></div>
+                <div class="blueCar"></div>
+                <div class="redCar"></div>
+                <div class="greenCar"></div>
+                <div class="blueCar"></div>
+                <div class="yellowCar"></div>
+                <div class="redCar"></div>
+                <div class="greenCar"></div>
+                <div class="blueCar"></div>
+                <div class="redCar"></div>
+                <div class="greenCar"></div>
+                <div class="blueCar"></div>
+                <div class="yellowCar"></div>
+                <div class="redCar"></div>
+                <div class="greenCar"></div>
+            </div>
+        </div>
+
+        <p id="carFact">
+            Personbiler står for 57% av utslippene fra transport.
+        </p>
+            
+        <!-- HØYRE VEI -->
+        <div class="road rightRoad">
+                <div class="barrier">
+                    <div class="barrierBlock"></div>
+                </div>
+                <div class="barrier">
+                    <div class="barrierBlock"></div>
+                </div>
+                <div class="midStripe"></div>
+                <div class="midStripe"></div>
+                <div class="midStripe"></div>
+                <div class="midStripe"></div>
+            </div>
+
+        <!-- SKYER -->
+        <div class="cloud" id="cOne"></div>
+        <div class="cloud" id="cTwo"></div>
+        <div class="cloud" id="cThree"></div>
+
+        <audio id="rain" style="display: none">
+            <source src="audio/rain_background.mp3">
+        </audio>
+        
+    </div>
+    
+    <script src="main.js"> </script>
+</body>
+</html>

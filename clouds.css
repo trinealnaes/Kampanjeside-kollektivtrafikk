@@ -1,0 +1,68 @@
+/* CLOUDS ON RIGHT SIDE */
+.cloud {
+    z-index: 12;
+	background: #e1e5d6;
+    box-shadow: 0px 3px 5px #374b1a;
+    margin-top: 60%;
+}
+
+.cloud:after, .cloud:before {
+    background: #e1e5d6;
+	content: '';
+    position: absolute;
+}
+
+.cloud:after {
+	border-radius: 40px;
+	height: 40px;
+	left: 20px;
+	top: -20px;
+	width: 40px;
+}
+
+.cloud:before {
+	border-radius: 80px;
+	width: 72px;
+	height: 72px;
+	right: 20px;
+	top: -36px;
+}
+
+#cOne, #cTwo, #cThree {
+    width: 140px;
+    height: 48px;
+    border-radius: 40px;
+    position: absolute;
+}
+#cOne {
+    top: 15%;
+    left: 50%;
+    animation: moveCloudRight 55s linear infinite;
+    animation-delay: -1s;
+}
+
+#cTwo {
+    top: 45%;
+    left: 50%;
+    animation: moveCloudLeft 55s linear infinite;
+    animation-delay: -5s;
+}
+
+@keyframes moveCloudLeft {
+    0% { margin-left: 45%; }
+    50% { margin-left: 0%; }
+    100% { margin-left: 45%; }
+}
+
+#cThree {
+    top: 75%;
+    left: 50%;
+    animation: moveCloudRight 55s linear infinite;
+    animation-delay: -9s;
+}
+
+@keyframes moveCloudRight {
+    0% { margin-left: 0%; }
+    50% { margin-left: 45%; }
+    100% { margin-left: 0%; }
+}
