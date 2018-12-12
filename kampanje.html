@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="clouds.css">
     <link rel="stylesheet" href="cars.css">
     <link rel="stylesheet" href="animals.css">
+    <link rel="stylesheet" href="Infotext.css">
     <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 </head>
@@ -130,7 +131,7 @@
         <!-- BUSSPLASSER -->
         <div id="busStations">
             <div class="stationGruop">
-                <div class="stationLeft">
+                <div class="stationLeft" id="first-left-bench">
                     <div class="bench"></div>
                 </div>
 
@@ -156,7 +157,7 @@
                     <div class="benchRight"></div>
                 </div>
 
-                <div class="stationRight">
+                <div class="stationRight" id="third-right-bench">
                     <div class="benchRight"></div>
                 </div>
 
@@ -194,7 +195,7 @@
             <audio id="trafficNoise" style="display: none">
                 <source src="audio/traffic_jam.mp3">
             </audio>
-            <div id="leftSide">
+            <div id="left-cars">
                 <div class="redCar"></div>
                 <div class="greenCar"></div>
                 <div class="yellowCar"></div>
@@ -212,7 +213,7 @@
                 <div class="greenCar"></div>
             </div>
 
-            <div id="rightSide">
+            <div id="right-cars">
                 <div class="yellowCar"></div>
                 <div class="blueCar"></div>
                 <div class="redCar"></div>
@@ -231,28 +232,33 @@
             </div>
         </div>
         <!-- Positiv fakta -->
-        <p id="taxFact">Du slipper å betale dyre bomavgifter, vegavgifter, piggdekkavgifter og mer.</p>
+        <p id="tax-fact">Du slipper å betale dyre bomavgifter, vegavgifter, 
+            piggdekkavgifter og mer.</p>
 
-        <p id="saveFact">Du kan spare flere tusen kroner på å velge kollektivt fremfor personbil.</p>
+        <p id="save-fact">Du kan spare flere tusen kroner på å velge 
+            kollektivt fremfor personbil.</p>
 
-        <p id="saveTimeFact">Du slipper lange køer og kan bruke den tiden du ellers ville kastet bort på noe mer nyttig.</p>
+        <p id="save-time-fact">Du slipper lange køer og kan bruke den 
+            tiden du ellers ville kastet bort på noe mer nyttig.</p>
 
-        <p id="posFact">Du trenger ikke tenke på hvor du skal parkere bilen, motorsykkelen, 
-            traktoren eller hva du ville valgt. Parkeringen ville også kostet deg en lite fristende sum.</p>
+        <p id="pos-fact">Du trenger ikke tenke på hvor du skal parkere 
+            bilen, motorsykkelen, traktoren eller hva du ville valgt. 
+            Parkeringen ville også kostet deg en lite fristende sum.</p>
 
         <!-- Negativ fakta -->
-        <p id="carFact"> Personbiler står for 57% av utslippene fra transport.</p>
+        <p id="car-fact"> Personbiler står for 57% av utslippene fra transport.</p>
 
-        <p id="queueFact">Ved å kutte ned biltrafikk vil det også kutte ned kø.</p>
+        <p id="queue-fact">Ved å kutte ned biltrafikk vil det også kutte ned kø.</p>
 
-        <p id="timeFact">En Oslo bilist kaster bort i 135 timer i kø hvert år.</p>
+        <p id="time-fact">En Oslo bilist kaster bort i 135 timer i kø hvert år.</p>
         
-        <p id="walkFact">Nesten 40% av reisene til og fra jobb er mindre enn 
+        <p id="walk-fact">Nesten 40% av reisene til og fra jobb er mindre enn 
             fem kilometer, som vil si at mange kunne spart både penger 
             og miljø ved å gå til fots eller bruke sykkel.</p>
+
         <!-- HØYRE VEI -->
         <div class="road rightRoad">
-                <div class="barrier">
+                <div class="barrier" id="barrier-fact">
                     <div class="barrierBlock"></div>
                 </div>
                 <div class="barrier">

@@ -65,14 +65,14 @@
     z-index: 10;
 }
 
-#leftSide, #rightSide {
+#left-cars, #right-cars {
     width: 50%;
     height: 100%;
     position: absolute;
     /* background-color: rgba(235, 69, 199, 0.4); */
 }
 
-#leftSide {
+#left-cars {
     transform: rotate(180deg);
     animation: queLeft 120s linear infinite;
 }
@@ -82,26 +82,7 @@
     100% { top: 100%; }
 }
 
-#carFact {
-    visibility: hidden;
-    position: absolute;
-}
-
-#carFact.infoText {
-    visibility: visible;
-    width: 160px;
-    height: 80px;
-    border-radius: 8px;
-    padding: 8px;
-    font-family: 'Quicksand';
-    position: absolute;
-    left: 55%;
-    top: 105%;
-    background-color: white;
-    box-shadow: -2px 3px 0px #3e521c;
-}
-
-#rightSide {
+#right-cars {
     right: 0;
     animation: queRight 300s linear infinite;
     /* background-color: rgba(255, 143, 91, 0.4); */

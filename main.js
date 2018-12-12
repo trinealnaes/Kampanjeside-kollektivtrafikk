@@ -14,9 +14,46 @@ hoverCars.onmouseout = function(){
     trafficNoise.pause();
 }
 
-document.getElementById("leftSide").addEventListener("click", function(){
-    var infoText = document.getElementById("carFact");
-    infoText.classList.toggle('infoText');
+// Faktabokser på kollektiv-siden
+document.getElementById("leftBus").addEventListener("click", function(){
+    var carInfoText = document.getElementById("tax-fact");
+    carInfoText.classList.toggle('taxInfo');
+});
+
+document.getElementById("first-left-bench").addEventListener("click", function(){
+    var carInfoText = document.getElementById("save-fact");
+    carInfoText.classList.toggle('saveInfo');
+});
+
+document.getElementById("third-right-bench").addEventListener("click", function(){
+    var carInfoText = document.getElementById("save-time-fact");
+    carInfoText.classList.toggle('saveTimeInfo');
+});
+
+document.getElementById("treeSecond").addEventListener("click", function(){
+    var carInfoText = document.getElementById("pos-fact");
+    carInfoText.classList.toggle('posInfo');
+});
+
+// Faktabokser på personbil-siden
+document.getElementById("left-cars").addEventListener("click", function(){
+    var carInfoText = document.getElementById("car-fact");
+    carInfoText.classList.toggle('carInfo');
+});
+
+document.getElementById("right-cars").addEventListener("click", function(){
+    var queueInfoText = document.getElementById("queue-fact");
+    queueInfoText.classList.toggle('queueInfo');
+});
+
+document.getElementById("barrier-fact").addEventListener("click", function(){
+    var timeInfoText = document.getElementById("time-fact");
+    timeInfoText.classList.toggle('timeInfo');
+});
+
+document.getElementById("cOne").addEventListener("click", function(){
+    var walkInfoText = document.getElementById("walk-fact");
+    walkInfoText.classList.toggle('walkInfo');
 });
 
 var hoverCloudOne = document.getElementById('cOne');
