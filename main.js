@@ -15,12 +15,12 @@ hoverCars.onmouseout = function(){
 }
 
 // Faktabokser på kollektiv-siden
-document.getElementById("leftBus").addEventListener("click", function(){
+document.getElementById("first-left-bench").addEventListener("click", function(){
     var carInfoText = document.getElementById("tax-fact");
     carInfoText.classList.toggle('taxInfo');
 });
 
-document.getElementById("first-left-bench").addEventListener("click", function(){
+document.getElementById("leftBus").addEventListener("click", function(){
     var carInfoText = document.getElementById("save-fact");
     carInfoText.classList.toggle('saveInfo');
 });
@@ -51,7 +51,7 @@ document.getElementById("barrier-fact").addEventListener("click", function(){
     timeInfoText.classList.toggle('timeInfo');
 });
 
-document.getElementById("cOne").addEventListener("click", function(){
+document.getElementById("cTwo").addEventListener("click", function(){
     var walkInfoText = document.getElementById("walk-fact");
     walkInfoText.classList.toggle('walkInfo');
 });

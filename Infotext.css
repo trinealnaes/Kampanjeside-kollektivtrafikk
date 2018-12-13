@@ -8,26 +8,31 @@
 #tax-fact.taxInfo, #save-fact.saveInfo, #save-time-fact.saveTimeInfo, #pos-fact.posInfo {
     visibility: visible;
     width: 160px;
-    height: 80px;
+    height: 70px;
     border-radius: 8px;
     padding: 8px;
     font-family: 'Quicksand';
     position: absolute;
     background-color: white;
-    box-shadow: -2px 3px 0px #3e521c;
+    box-shadow: 0px 3px 5px #3e521c;
+    z-index: 1000;
 }
 
-#tax-fact.taxInfo { height: 80px; width: 210px; }
+/* Positive facts */
+#tax-fact.taxInfo { height: 70px; width: 210px; }
 #save-fact.saveInfo { height: 90px; width: 170px; }
+#save-time-fact.saveTimeInfo { height: 90px; width: 200px; }
+#pos-fact.posInfo { height: 125px; width: 230px; }
+
+#tax-fact { left: 10%; top: 115%; }
+#save-fact { left: 30%; top: 125%; }
+#save-time-fact { left: 45%; top: 155%; }
+#pos-fact { left: 25%; top: 160%; }
 
 /* Negative facts */
-#car-fact.carInfo { left: 45%; top: 105%; }
-#queue-fact.queueInfo { right: 20%; top: 140%; }
-#time-fact.timeInfo { right: 30%; top: 120%; }
-#walk-fact.walkInfo { right: 15%; top: 190%; }
+#walk-fact.walkInfo { width: 220px; height: 120px; }
 
-/* Positive facts */
-#tax-fact { left: 10%; top: 110%; }
-#save-fact { left: 30%; top: 125%; }
-#save-time-fact { left: 40%; top: 155%; }
-#pos-fact { left: 20%; top: 180%; }
+#car-fact.carInfo { right: 35%; top: 105%; }
+#queue-fact.queueInfo { right: 10%; top: 135%; }
+#time-fact.timeInfo { right: 30%; top: 125%; }
+#walk-fact.walkInfo { right: 32%; top: 160%; }
